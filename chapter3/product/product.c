@@ -7,7 +7,7 @@ int main(){
 	FILE *f1 = NULL;
 	int ascii_code = 0, i = 0, j = 0;
 	int isminus = 0;
-	int num[10], num2 = 0, num3 = 1;
+	int num[10], num2 = 1, num3 = 1;
 
 	memset(num, '\0', sizeof(num));
 	f1 = fopen("product.in", "r");
@@ -35,7 +35,7 @@ int main(){
 			num3 *= num2;
 			isminus = 0;
 			i = 0;
-			num2 = 0;
+			num2 = 1;
 			memset(num, '\0', sizeof(num));
 		}else if( ascii_code == 45){
 			//minus
